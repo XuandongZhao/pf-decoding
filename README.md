@@ -1,6 +1,8 @@
 # pf-decoding
 Permute-and-Flip: An optimally robust and watermarkable decoder for LLMs
 
+[Update] The paper is accepted by ICLR 2025!
+
 [arXiv page](https://arxiv.org/abs/2402.05864) 
 
 
