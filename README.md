@@ -5,8 +5,7 @@ Permute-and-Flip: An optimally stable and watermarkable decoder for LLMs
 
 📄 [arXiv page](https://arxiv.org/abs/2402.05864) 
 
-🔗 You can also try our implementation via [https://github.com/THU-BPM/MarkLLM](https://github.com/THU-BPM/MarkLLM), where our algorithm is available at:  
-[`watermark/pf/pf.py`](https://github.com/THU-BPM/MarkLLM/blob/main/watermark/pf/pf.py)
+🔗 You can also try our implementation via [https://github.com/THU-BPM/MarkLLM](https://github.com/THU-BPM/MarkLLM), where our algorithm is available at: [`watermark/pf/pf.py`](https://github.com/THU-BPM/MarkLLM/blob/main/watermark/pf/pf.py)
 
 ## Introduction
 We propose a new decoding method called Permute-and-Flip (PF) decoder. It enjoys stability properties similar to the standard sampling decoder, but is provably up to 2x better in its quality-stability tradeoff than sampling and never worse than any other decoder. We also design a cryptographic watermarking scheme analogous to Aaronson (2023)'s Gumbel watermark, but naturally tailored for PF decoder. The watermarking scheme does not change the distribution to sample, while allowing arbitrarily low false positive rate and high recall whenever the generated text has high entropy. Our experiments show that the PF decoder (and its watermarked counterpart) significantly outperform(s) naive sampling (and its Gumbel watermarked counterpart) in terms of perplexity, while retaining the same stability (and detectability), hence making it a promising new approach for LLM decoding. 
